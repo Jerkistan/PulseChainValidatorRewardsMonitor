@@ -6,8 +6,6 @@ namespace ValidatorRewardsMonitor
 {
     public class Program
     {
-       
-        // expects wallet address as an argument
         static void Main(string[] args)
         {
             if (string.IsNullOrEmpty(args[0]))
