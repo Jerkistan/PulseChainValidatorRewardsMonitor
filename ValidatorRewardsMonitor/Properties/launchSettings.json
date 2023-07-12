@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ValidatorRewardsMonitor": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\lifeo\\Desktop\\appsettings.json"
+    }
+  }
+}
