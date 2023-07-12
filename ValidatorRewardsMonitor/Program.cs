@@ -12,14 +12,13 @@ namespace ValidatorRewardsMonitor
         {
             if (string.IsNullOrEmpty(args[0]))
             {
+                Console.WriteLine("Please specify the configuration file path.");
                 Environment.Exit(0);
             }
 
             Settings settings = new Settings();
 
             string configPath = args[0];
-
-            Console.ReadKey();
 
             if (!System.IO.File.Exists(configPath + "/appsettings.json"))
             {
