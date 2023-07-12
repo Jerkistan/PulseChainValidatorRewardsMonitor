@@ -3,6 +3,8 @@
 This application will let you use your existing Twilio account to send you an SMS every time (a) your validator rewards wallet balance increases, and (b) every time you propose a new block.  The application is dotnet 7.0 and requires that you have the dotnet 7.0 sdk installed. 
 
 To install dotnet 7.0 SDK you can run the following command:<br>
+sudo apt-get update
+<br>
 sudo apt-get install -y dotnet-sdk-7.0
 <br>
 <br>
