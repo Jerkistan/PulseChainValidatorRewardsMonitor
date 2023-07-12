@@ -19,6 +19,12 @@ namespace ValidatorRewardsMonitor
 
             string configPath = args[0];
 
+            Console.WriteLine(configPath);
+
+            Console.WriteLine("??");
+
+            Console.ReadKey();
+
             if (!System.IO.File.Exists(configPath + "/appsettings.json"))
             {
                 Console.Write("Enter your validator reward wallet address: ");
