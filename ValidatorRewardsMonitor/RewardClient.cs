@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Numerics;
@@ -94,7 +95,7 @@ namespace ValidatorRewardsMonitor
             string json =  Get("?module=account&action=eth_get_balance&address=" + settings.wallet);
             BalanceResult result = JsonConvert.DeserializeObject<BalanceResult>(json);
 
-            BigInteger decValue = BigInteger.Parse(result.result.Remove(0, 2), System.Globalization.NumberStyles.HexNumber);
+            BigInteger decValue = BigInteger.Parse("0" + result.result.Remove(0, 2), NumberStyles.HexNumber);
             decimal value = (decimal)decValue / 1000000000000000000;
             result.resultDecimal = Convert.ToDecimal(value);
 
